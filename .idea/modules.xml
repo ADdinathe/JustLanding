@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/JustLanding.iml" filepath="$PROJECT_DIR$/.idea/JustLanding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/magnit-agent-front.iml" filepath="$PROJECT_DIR$/.idea/magnit-agent-front.iml" />
     </modules>
   </component>
 </project>
