@@ -1,5 +1,5 @@
 
-.button{
+.button {
   border-radius: 20px;
   padding: 0.9rem 2.9rem;
   background: none;
@@ -10,17 +10,16 @@
   line-height: 16px;
   white-space: nowrap;
 
-  &_primary{
+  &_primary {
     padding: 0.9rem 2.9rem;
-    background: #FF0000;
-    color: #FFFFFF;
+    background: $coral-color;
+    color: $white-color;
   }
 
-  &_secondary{
+  &_secondary {
     padding: 0.9rem 2.9rem;
-    border: 2px solid #000000;
+    border: 2px solid $black-color;
     border-radius: 20px;
   }
 }
-
 

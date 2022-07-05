@@ -1,25 +1,25 @@
 @import '~styles/colors';
 
 @keyframes hover-up {
-  from{
+  from {
     top: 12px;
   }
-  10%{
+  10% {
     top: 16px;
   }
-  to{
+  to {
     top: 5px;
   }
 }
 
 @keyframes hover-down {
-  from{
+  from {
     top: 5px;
   }
-  95%{
+  95% {
     top: 15px;
   }
-  to{
+  to {
     top: 12px;
   }
 }
@@ -31,11 +31,10 @@
   align-items: center;
   position: relative;
 
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //width: 35%;
 
     &__title {
       letter-spacing: 0.41px;
@@ -43,33 +42,33 @@
       text-align: left;
     }
 
-    .red{
-      color: #FF0000;
+    .red {
+      color: $coral-color;
       position: relative;
       padding-left: 14px;
 
-      .dot{
+      .dot {
         position: absolute;
         top: 12px;
         left: 18px;
-        width: 7px;
-        height: 7px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        background: #FF0000;
+        background: $coral-color;
         animation: 200ms ease-in hover-down backwards;
 
       }
 
-      .stick{
+      .stick {
         position: absolute;
         bottom: 14px;
         left: 18px;
-        width: 7px;
-        height: 30px;
-        background: #FF0000;
+        width: 8px;
+        height: 45px;
+        background: $coral-color;
       }
 
-      &:hover{
+      &:hover {
         .dot {
           animation: 300ms ease-in hover-up backwards;
           top: 5px;
@@ -79,31 +78,31 @@
       }
     }
 
-    &__text{
+    &__text {
       padding: 0;
       font-size: 20px;
       line-height: 24px;
 
       text-align: left;
 
-      color: #3D3D3D;
+      color: $text-color;
 
       margin-bottom: 3rem;
     }
 
-    &__button-group{
+    &__button-group {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
   }
 
-  .picture{
+  .picture {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50rem;
-    height: 55rem;
-    background: url("./img/pic.png") no-repeat center / contain;
+    width: 40rem;
+    height: 43rem;
+    background: url('./img/pic.png') no-repeat center / contain;
   }
 }

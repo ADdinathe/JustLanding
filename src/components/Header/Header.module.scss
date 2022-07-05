@@ -1,21 +1,17 @@
 
-.header{
+.header {
   padding: 2.4rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  &__logo{
+  &__logo {
     width: 11.5rem;
     height: 3rem;
-    background: url("./img/logo.svg") no-repeat center / contain;
+    background: url('./img/logo.svg') no-repeat center / contain;
   }
 
-  .navigation{
-
-  }
-
-  .navigation-list{
+  .navigation-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,17 +21,17 @@
     align-items: center;
 
 
-    &__item{
+    &__item {
       display: block;
       margin: 0  4rem;
 
     }
-    &__item-link{
+    &__item-link {
       font-weight: 600;
       font-size: 16px;
       line-height: 13px;
 
-      color: #000000;
+      color: $black-color;
     }
   }
 
