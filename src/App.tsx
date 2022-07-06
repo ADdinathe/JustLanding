@@ -3,13 +3,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Root from 'pages/Root';
 
-
 import { Header } from './components/Header';
 
 const App: React.FC = () => (
   <BrowserRouter>
-      <Header />
-      <Root />
+    <Header />
+    <Root />
   </BrowserRouter>
 );
 

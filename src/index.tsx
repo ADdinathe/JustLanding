@@ -5,7 +5,6 @@ import App from './App';
 import './styles/styles.scss';
 
 const startApp = () => {
-
   render(<App />, document.getElementById('root'));
 };
 
