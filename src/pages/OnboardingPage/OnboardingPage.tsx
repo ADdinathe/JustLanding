@@ -15,12 +15,12 @@ const OnboardingPage: React.FC = () => {
       <div styleName="content">
         <Title styleName="content__title">
           Lorem
-          <span styleName="red">
+          <div styleName="red">
             {' '}
             <span styleName="dot" />
             <span styleName="stick" />
             psum
-          </span>
+          </div>
           , dolor sit amet
         </Title>
         <p styleName="content__text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
