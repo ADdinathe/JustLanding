@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "baseUrl" : "src",
+    "paths": {
+      "components": ["components/*"],
+      "config": ["config/*"],
+      "img": ["img/*"],
+      "pages": ["pages/*"],
+      "store": ["store/*"],
+      "utils": ["utils/*"],
+      "styles": ["styles/*"]
+    },
+    "noEmit": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

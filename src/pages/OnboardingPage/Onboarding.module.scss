@@ -1,0 +1,109 @@
+@import '~styles/colors';
+
+@keyframes hover-up {
+  from{
+    top: 14px;
+  }
+  10%{
+    top: 18px;
+  }
+  to{
+    top: 1px;
+  }
+}
+
+@keyframes hover-down {
+  from{
+    top: 1px;
+  }
+  50%{
+    top: 22px;
+  }
+  to{
+    top: 14px;
+  }
+}
+
+.onboarding {
+  margin: 2.4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //width: 35%;
+
+    &__title {
+      letter-spacing: 0.41px;
+      margin-bottom: 4.3rem;
+      text-align: left;
+    }
+
+    .red{
+      color: #FF0000;
+      position: relative;
+      padding-left: 14px;
+
+      .dot{
+        position: absolute;
+        top: 14px;
+        left: 18px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #FF0000;
+        animation: 300ms ease-in hover-down backwards;
+
+      }
+
+      .stick{
+        position: absolute;
+        bottom: 18px;
+        left: 18px;
+        width: 9px;
+        height: 41px;
+        background: #FF0000;
+      }
+
+      &:hover{
+        .dot {
+          animation: 300ms ease-in hover-up backwards;
+          top: 1px;
+        }
+
+
+      }
+    }
+
+    &__text{
+      padding: 0;
+      font-size: 20px;
+      line-height: 24px;
+
+      text-align: left;
+
+      color: #3D3D3D;
+
+      margin-bottom: 3rem;
+    }
+
+    &__button-group{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .picture{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40rem;
+    height: 43rem;
+    background: url("./img/pic.png") no-repeat center / contain;
+  }
+}

@@ -1,0 +1,33 @@
+$transition-time: 300ms;
+
+.route {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: opacity, transform;
+
+  &-enter {
+    opacity: 0;
+    transform: scale(1.1);
+
+    &-active {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: scale(1);
+
+    &-active {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+
+  &-enter-active,
+  &-exit-active {
+    transition: opacity $transition-time linear, transform $transition-time ease-in;
+  }
+}
