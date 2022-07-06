@@ -6,7 +6,7 @@
   "scripts": {
     "win-dev": "SET NODE_ENV=development& SET API_URL=/api/& webpack serve --mode development",
     "dev": "NODE_ENV=development npx webpack serve --mode=development",
-    "build": "yarn rm-public & NODE_ENV=production webpack --mode production && yarn run rm-source-maps",
+    "build": "yarn rm-public & NODE_ENV=production webpack --mode production",
     "ts-check": "tsc --skipLibCheck --noEmit --project tsconfig.json",
     "tsc:check": "tsc --noEmit",
     "codestyle:fix": "prettier --write **/*.{ts,tsx,json,css,scss}",
